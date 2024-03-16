@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/navbar"
+     android:layout_width="match_parent"
+     android:layout_height="?attr/actionBarSize"
+     android:background="?attr/colorPrimary"
+     android:elevation="4dp"
+     app:menu="@menu/navbartop"
+     android:title="ToDoiT"
+     />
+
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/recycleview"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/navbar"
+
+
+     android:layout_marginTop="2dp" />
+
+ <com.google.android.material.floatingactionbutton.FloatingActionButton
+     android:id="@+id/floatbutton"
+     android:layout_width="133dp"
+     android:layout_height="132dp"
+     android:layout_alignParentEnd="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginStart="30dp"
+     android:layout_marginTop="30dp"
+     android:layout_marginEnd="27dp"
+     android:layout_marginBottom="30dp"
+     android:background="@drawable/circle"
+     android:src="@drawable/baseline_add_24"
+     app:maxImageSize="40dp"
+     app:shapeAppearance="@drawable/circle"
+     app:shapeAppearanceOverlay="@drawable/circle" />
+
+
+</RelativeLayout>

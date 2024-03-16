@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ToDoiT</string>
+    <string name="hintcontact">Add your Works to me .</string>
+    <string name="splace_text">let\'s have Daily records</string>
+</resources>
